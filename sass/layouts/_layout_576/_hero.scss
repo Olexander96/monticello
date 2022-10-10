@@ -6,26 +6,21 @@
             
             h2 {
                 @include hero-text;
-                font-size: 80px;
+                font-size: 40px;
+                margin-bottom: 30px;
             }
 
             p {
                 @include hero-text;
-                font-size: 18px;  
-                max-width: fit-content;
+                font-size: 16px; 
+                letter-spacing: 0.3em; 
+                max-width: 450px;
             }
         }
-        
     }
 }
 
 .slick-dots {
-    right: 52px;
+    right: 25px;
 
-    & li { 
-
-        &:not(:last-child) {
-            margin-bottom: 40px;
-        }
-    }
 }

@@ -1,0 +1,115 @@
+.projects {
+    position: relative;
+    background-color: $whiteSilver;
+
+    .container {
+        padding: 70px 5px 75px;
+    }
+
+    &__title {
+        @include project-title;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        &:nth-of-type(2) {
+            flex-direction: column-reverse;
+        }
+
+        .project-img {
+            max-width: 280px;
+            height: auto;
+            z-index: 5;
+            margin-bottom: 20px;
+        }
+
+        .project-info {
+            max-width: 476px;
+            display: flex;
+            flex-direction: column;
+
+            & span {
+                @include prorect-info-span;
+                font-size: 22px;
+                margin-bottom: 17px;
+            }
+
+            & h3 {
+                @include project-title;
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            
+            & p {
+                @include project-info-text;
+                margin-bottom: 40px;
+            }
+
+            & a {
+                @include project-button-link;
+                margin-bottom: 60px;
+            }
+
+            & a:hover {
+                border: transparent;
+                background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+                color: $white;
+            }
+
+            &__place {
+                display: flex;
+                flex-direction: row;
+
+                .icon {
+                    width: 9px;
+                    height: 17px;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-family: 'Open Sans', 'Arial', sans-serif;
+                    text-transform: none;
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: $black;
+                }
+            }
+
+        }
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .projects-decore-one {
+        display: none;
+        top: 274px;
+        left: 0;
+        position: absolute;
+        min-width: 585px;
+        min-height: 470px;
+        background-color: #55B7FF;
+    }
+    .projects-decore-two {
+        display: none;
+        bottom: 207px;
+        right: 0;
+        position: absolute;
+        min-width: 585px;
+        min-height: 470px;
+        background-color: #7E5AFF;
+    }
+}

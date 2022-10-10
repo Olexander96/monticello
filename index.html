@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monticello</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
@@ -26,10 +27,10 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="nav-item">
-                        <a class="nav-item__link" href="#">about us</a>
+                        <a class="nav-item__link" href="#hero">about us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-item__link" href="#">projects</a>
+                        <a class="nav-item__link" href="#projects">projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-item__link" href="#">news</a>
@@ -59,10 +60,16 @@
                     <span class="visually-hidden">instagram link</span>
                 </a>
             </div>
+            <button class="header__menu-button">
+                <span class="menu-button__item"></span>
+                <span class="menu-button__item"></span>
+                <span class="menu-button__item"></span>
+                <span class="menu-button__item"></span>
+            </button>
         </div>
     </header>
     <main class="main">
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <div class="hero__slider">
                     <div class="slider-item first-slide">
@@ -86,11 +93,73 @@
                         <p>we make the world beautiful everyday</p>
                     </div>
                 </div>
-                <a class="hero__arrow" href="#">
+                <a class="hero__arrow" href="#projects">
                     <svg class="hero__arrow-icon">
                         <use xlink:href="./img/sprite.svg#hero-arrow-down"></use>
                     </svg>
                 </a>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="projects__title">what we do</h2>
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        <img class="project-img" src="./img/project-first.png" alt="trade-center-build">
+                        <div class="project-info">
+                            <span>one world</span>
+                            <h3>trade center</h3>
+                            <p>Increasing prosperity in our lives can be accomplished by having 
+                                the right frame of mind. The truth is, our thoughts are very powerful.
+                            </p>
+                            <a href="#">more details</a>
+                            <div class="project-info__place">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#project-place-icon"></use>
+                                </svg>
+                                <span>New York City, United States - 1776 feet</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="project-info">
+                            <span>INTERNATIONAL</span>
+                            <h3>COMMERCE CENTRE</h3>
+                            <p>Successful businesses have many things in common, today we’ll look at the big ‘R’ 
+                                of recognition and how a digital advertising network may help.
+                            </p>
+                            <a href="#">more details</a>
+                            <div class="project-info__place">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#project-place-icon"></use>
+                                </svg>
+                                <span>Hong Kong - 1588 feet</span>
+                            </div>
+                        </div>
+                        <img class="project-img" src="./img/project-second.png" alt="commerce-centre-build">
+                    </li>
+                </ul>
+            </div>
+            <div class="projects-decore-one"></div>
+            <div class="projects-decore-two"></div>
+        </section>
+        <section class="news" id="news">
+            <div class="container">
+                <h2 class="news-title">latest news</h2>
+                <div class="news-slider">
+                    <div class="news-slider__item">
+                        <img src="" alt="">
+                        <h3></h3>
+                        <p></p>
+                        <div>
+                            <img src="" alt="">
+                            <div>
+                                <h4></h4>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

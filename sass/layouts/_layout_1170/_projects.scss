@@ -1,0 +1,41 @@
+.projects {
+    
+    .container {
+        padding: 135px 15px 150px;
+    }
+
+    &__title {
+        font-size: 44px;
+        margin-bottom: 153px;
+    }
+
+    &__item {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &:nth-of-type(2) {
+            flex-direction: row;
+        }
+
+        .project-img {
+            margin-bottom: 0px;
+            max-width: 630px;
+        }
+
+        .project-info {
+            & h3 {
+                font-size: 44px;
+            }
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 178px;
+    }
+
+    .projects-decore-one, .projects-decore-two {
+        display: block;
+    }
+}
+
