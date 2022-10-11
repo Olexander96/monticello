@@ -1,0 +1,22 @@
+.news {
+    
+    .container {
+        padding: 140px 15px 170px;
+    }
+
+    &-title {
+        margin-bottom: 90px;
+    }
+
+    &-slider {
+        width: 1370px;
+        left: calc(50% - 685px);
+
+        .arrow-left {
+            margin-right: 45px;
+        }
+        .arrow-right {
+            margin-left: 45px;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.news {
+    
+    .container {
+        padding: 70px 15px 90px;
+    }
+
+    &-title {
+        font-size: 44px;
+    }
+
+    &-slider {
+        width: 840px;
+        left: calc(50% - 420px);
+
+        .arrow-left {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .arrow-right {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        &__item {
+            max-width: 370px;
+            margin: 0 15px;
+
+            .item-text {
+                padding: 30px 20px;
+                min-height: 295px;
+
+                .news-info {
+                    & h3 {
+                        font-size: 22px;
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+        
+        .slick-dots {
+            bottom: -50px;
+            & li {
+        
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}

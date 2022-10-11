@@ -1,4 +1,5 @@
 .hero {
+    margin-top: -117px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -87,47 +88,46 @@
         }
     }
 
-}
-
-.slick-dots {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: fit-content;
-    height: fit-content;
-    z-index: 10;
-
-    & li {
-        display: block;
-        border: 1px solid $white;
-        border-radius: 50%;
-        margin: 0;
-        width: 10px;
-        height: 10px;
-
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
-
-        & button:before {
-            content: '';
-            width: 100%;
-            height: 100%;
+    .slick-dots {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+        z-index: 10;
+    
+        & li {
+            display: block;
+            border: 1px solid $white;
             border-radius: 50%;
-            opacity: 1;
-        }
-
-        &.slick-active button:before {
-            background-color: $white;
-            opacity: 1;
+            margin: 0;
+            width: 10px;
+            height: 10px;
+    
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+    
+            & button:before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                opacity: 1;
+            }
+    
+            &.slick-active button:before {
+                background-color: $white;
+                opacity: 1;
+            }
         }
     }
-}
 
+}
 
 .hero__arrow {
     display: flex;

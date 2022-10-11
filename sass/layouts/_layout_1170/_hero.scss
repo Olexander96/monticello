@@ -17,15 +17,16 @@
         }
         
     }
-}
 
-.slick-dots {
-    right: 52px;
-
-    & li { 
-
-        &:not(:last-child) {
-            margin-bottom: 40px;
+    .slick-dots {
+        right: 52px;
+    
+        & li { 
+    
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
         }
     }
 }
+

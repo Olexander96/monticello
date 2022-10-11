@@ -27,5 +27,42 @@ document.addEventListener('DOMContentLoaded', function() {
         verticalSwiping: true,
     });
 
+    $('.news-slider').slick({
+        infinite: true,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<img src="img/news-arrow-left.svg" alt="slick-arrow" class="arrow-left">',
+        nextArrow: '<img src="img/news-arrow-right.svg" alt="slick-arrow" class="arrow-right">',
+        centerMode: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    centerMode: false,
+                    arrows: true,
+                    dots: true,
+                    centerMode: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    centerMode: false,
+                    arrows: false,
+                    dots: true,
+                    centerMode: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            }
+          ]
+
+    });
+
 
 })
