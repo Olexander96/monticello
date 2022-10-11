@@ -1,0 +1,12 @@
+.gallery {
+
+    .container {
+        padding: 180px 15px 150px;
+    }
+
+    &__list {
+        grid-template-columns: 285px 285px 285px 285px;
+        grid-template-rows: 214px 214px;
+    }
+
+}

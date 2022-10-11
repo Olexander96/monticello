@@ -35,10 +35,13 @@ document.addEventListener('DOMContentLoaded', function() {
         prevArrow: '<img src="img/news-arrow-left.svg" alt="slick-arrow" class="arrow-left">',
         nextArrow: '<img src="img/news-arrow-right.svg" alt="slick-arrow" class="arrow-right">',
         centerMode: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
+                    autoplay: true,
                     centerMode: false,
                     arrows: true,
                     dots: true,
@@ -51,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 breakpoint: 768,
                 settings: {
+                    autoplay: true,
                     centerMode: false,
                     arrows: false,
                     dots: true,
