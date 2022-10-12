@@ -1,0 +1,18 @@
+.footer {
+    min-height: 549px;
+    align-items: center;
+    .container {
+        min-width: 800px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin-bottom: 0px;
+        
+        
+        img {
+            margin-bottom: 41px;
+        }
+    }
+}

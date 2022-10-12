@@ -1,0 +1,156 @@
+.contact {
+    position: relative;
+
+    .container {
+        min-width: 100%;
+        height: fit-content;
+        padding: 0;
+    }
+
+    &__place {
+        width: 100%;
+        height: 400px;
+    }
+
+    .info-wondow-text {
+        @include prorect-info-span;
+        text-transform: none;
+        font-size: 30px;
+    }
+
+    &__form {
+        position: absolute;
+        left: 0;
+        bottom: -200px;
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        margin: 0 auto;
+        padding: 10px 10px 20px;
+        background-color: $white;
+        background-image: url('/img/contact-form-bg.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    &__title {
+        @include project-title;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 35px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: $darkBlue;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .left-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 196px;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            &__item {
+
+                i {
+                    color: $blurMiddle;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-family: 'Montserrat', 'Arial', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .right-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__item {
+                position: relative;
+                min-width: 100%;
+            }
+
+            input {
+                width: 100%;
+                margin-bottom: 30px;
+                height: fit-content;
+                padding-bottom: 20px;
+                font-family: 'Montserrat', 'Arial', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                border: transparent;
+                border-bottom: 1px solid $silver;
+
+                &:focus {
+                    outline: none;
+                    border-bottom: 1px solid $silverDark;
+                }
+
+                &:focus::placeholder {
+                    opacity: 0;
+                }
+
+                &:valid {
+                    background: url('/img/form-OK-icon.svg');
+                    background-repeat: no-repeat;
+                    background-size: 20px;
+                    background-position: left top;
+                    padding-left: 30px;
+                }
+                
+            }
+
+            input:invalid:not(:focus):not(:placeholder-shown) {
+                background-color: rgb(253, 185, 185);
+            }
+            input:invalid:not(:focus):not(:placeholder-shown) + .requirements{
+                display: block;
+            }
+
+            .requirements {
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+                display: none;
+                font-size: 12px;
+                font-family: 'Montserrat', 'Arial', sans-serif;
+                font-style: italic;
+                color: red;
+            }
+
+            
+
+            button {
+                @include project-button-link;
+                min-width: 140px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $white;
+                    background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+                    border: transparent;
+                }
+            }
+        }
+    }
+}

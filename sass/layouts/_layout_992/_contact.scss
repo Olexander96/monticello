@@ -1,0 +1,36 @@
+.contact {
+    
+    &__form {
+        position: absolute;
+        left: calc(50% - 385px);
+        bottom: -150px;
+        display: flex;
+        flex-direction: column;
+        min-width: 770px;
+        padding: 60px 60px 70px;
+    }
+
+    &__title {
+        font-size: 44px;
+        margin-bottom: 50px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .left-list {
+            margin-bottom: 0px; 
+        }
+
+        .right-form {
+            align-items: flex-end;
+
+            input {
+                width: 310px;
+            }
+        }
+    }
+        
+}

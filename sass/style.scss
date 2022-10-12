@@ -9,9 +9,9 @@
     @import 'layouts/_layout_768/index';
 }
 
-// @media only screen and (min-width: 992px) {
-//     @import 'layouts/_layout_992/index';
-// }
+@media only screen and (min-width: 992px) {
+    @import 'layouts/_layout_992/index';
+}
 
 @media only screen and (min-width: 1170px) {
     @import 'layouts/_layout_1170/index';
