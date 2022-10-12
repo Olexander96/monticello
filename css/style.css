@@ -607,7 +607,7 @@ table {
 }
 
 .news {
-  background-image: url("./img/news-bg.png");
+  background-image: url("../img/news-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
