@@ -28,7 +28,7 @@
         margin: 0 auto;
         padding: 10px 10px 20px;
         background-color: $white;
-        background-image: url('/img/contact-form-bg.png');
+        background-image: url('../img/contact-form-bg.png');
         background-position: bottom;
         background-repeat: no-repeat;
     }
@@ -111,7 +111,7 @@
                 }
 
                 &:valid {
-                    background: url('/img/form-OK-icon.svg');
+                    background: url('../img/form-OK-icon.svg');
                     background-repeat: no-repeat;
                     background-size: 20px;
                     background-position: left top;

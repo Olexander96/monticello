@@ -43,7 +43,7 @@
         }
 
         .first-slide {
-            background-image: url('/img/first-build.jpg');
+            background-image: url('../img/first-build.jpg');
         
             &::before {
                 @include hero-background-for-slide;
@@ -52,7 +52,7 @@
         }
         
         .second-slide {
-            background-image: url('/img/second-bild.jpg');
+            background-image: url('../img/second-bild.jpg');
         
             &::before {
                 @include hero-background-for-slide;
@@ -61,7 +61,7 @@
         }
         
         .third-slide {
-            background-image: url('/img/third-build.jpg');
+            background-image: url('../img/third-build.jpg');
         
             &::before {
                 @include hero-background-for-slide;
@@ -70,7 +70,7 @@
         }
         
         .fourth-slide {
-            background-image: url('/img/fourth-build.jpg');
+            background-image: url('../img/fourth-build.jpg');
         
             &::before {
                 @include hero-background-for-slide;
@@ -79,7 +79,7 @@
         }
         
         .fifth-slide {
-            background-image: url('/img/fivth-build.jpg');
+            background-image: url('../img/fivth-build.jpg');
         
             &::before {
                 @include hero-background-for-slide;

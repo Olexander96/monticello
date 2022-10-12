@@ -360,7 +360,7 @@ table {
   max-width: 280px;
 }
 .hero__slider .first-slide {
-  background-image: url("/img/first-build.jpg");
+  background-image: url("../img/first-build.jpg");
 }
 .hero__slider .first-slide::before {
   content: "";
@@ -373,7 +373,7 @@ table {
   background: linear-gradient(243.43deg, rgb(126, 90, 255) 16.9%, rgb(85, 183, 255) 83.27%);
 }
 .hero__slider .second-slide {
-  background-image: url("/img/second-bild.jpg");
+  background-image: url("../img/second-bild.jpg");
 }
 .hero__slider .second-slide::before {
   content: "";
@@ -386,7 +386,7 @@ table {
   background: linear-gradient(243.43deg, rgb(40, 110, 40) 16.9%, rgb(161, 68, 157) 83.27%);
 }
 .hero__slider .third-slide {
-  background-image: url("/img/third-build.jpg");
+  background-image: url("../img/third-build.jpg");
 }
 .hero__slider .third-slide::before {
   content: "";
@@ -399,7 +399,7 @@ table {
   background: linear-gradient(243.43deg, rgb(51, 51, 46) 16.9%, rgb(253, 119, 126) 83.27%);
 }
 .hero__slider .fourth-slide {
-  background-image: url("/img/fourth-build.jpg");
+  background-image: url("../img/fourth-build.jpg");
 }
 .hero__slider .fourth-slide::before {
   content: "";
@@ -412,7 +412,7 @@ table {
   background: linear-gradient(243.43deg, rgb(51, 109, 96) 16.9%, rgb(94, 252, 94) 83.27%);
 }
 .hero__slider .fifth-slide {
-  background-image: url("/img/fivth-build.jpg");
+  background-image: url("../img/fivth-build.jpg");
 }
 .hero__slider .fifth-slide::before {
   content: "";
@@ -836,7 +836,7 @@ table {
   margin: 0 auto;
   padding: 10px 10px 20px;
   background-color: #FFFFFF;
-  background-image: url("/img/contact-form-bg.png");
+  background-image: url("../img/contact-form-bg.png");
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -911,7 +911,7 @@ table {
   opacity: 0;
 }
 .contact__block .right-form input:valid {
-  background: url("/img/form-OK-icon.svg");
+  background: url("../img/form-OK-icon.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: left top;
@@ -957,7 +957,7 @@ table {
 }
 
 .footer {
-  background: url("./img/footer-bg.png");
+  background: url("../img/footer-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
