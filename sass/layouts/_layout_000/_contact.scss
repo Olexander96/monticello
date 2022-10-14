@@ -138,11 +138,9 @@
                 color: red;
             }
 
-            
-
             button {
                 @include project-button-link;
-                min-width: 140px;
+                min-width: 100%;
                 cursor: pointer;
 
                 &:hover {

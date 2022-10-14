@@ -113,5 +113,25 @@ document.addEventListener('DOMContentLoaded', function() {
         marker.addListener('click', function () {
             INFO.open(MAP, marker);
         })
+
+        //галерея в модальних вікнах 
+        $('.gallery__list').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: false,
+            closeBtnInside: false,
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            image: {
+                verticalFit: true,
+            },
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, 
+            }
+            
+        });
     
 })

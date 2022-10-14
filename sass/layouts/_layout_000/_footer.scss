@@ -39,8 +39,13 @@
     }
     
     &__contacts {
+        height: fit-content;
         display: flex;
         flex-direction: row;
+
+        .contact__item:not(:last-child) {
+            margin-right: 20px;
+        }
 
         .contact-link {
             display: flex;

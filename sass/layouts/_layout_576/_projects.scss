@@ -5,5 +5,12 @@
         .project-img {
             max-width: 450px;
         }
+        .project-info {
+            & a {
+                @include project-button-link;
+                max-width: 190px;
+                margin-bottom: 60px;
+            }
+        }
     }
 }

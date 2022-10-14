@@ -30,6 +30,9 @@
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" 
+        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
@@ -43,6 +46,7 @@
         <div class="container">
             <img class="header__logo" src="./img/Logo.svg" alt="company-logo">
             <nav class="header__nav">
+                <h2 class="visually-hidden">navigation</h2>
                 <ul class="header__nav-list">
                     <li class="nav-item">
                         <a class="nav-item__link" href="#hero">about us</a>
@@ -58,26 +62,32 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header__contacts">
-                <a class="contact-link" href="#">
-                    <svg class="contact-link__icon facebook">
-                        <use xlink:href="./img/sprite.svg#facebook-icon"></use>
-                    </svg>
-                    <span class="visually-hidden">facebook link</span>
-                </a>
-                <a class="contact-link" href="#">
-                    <svg class="contact-link__icon twitter">
-                        <use xlink:href="./img/sprite.svg#twitter-icon"></use>
-                    </svg>
-                    <span class="visually-hidden">twitter link</span>
-                </a>
-                <a class="contact-link" href="#">
-                    <svg class="contact-link__icon instagram">
-                        <use xlink:href="./img/sprite.svg#instagram-icon"></use>
-                    </svg>
-                    <span class="visually-hidden">instagram link</span>
-                </a>
-            </div>
+            <ul class="header__contacts">
+                <li class="contact__item">
+                    <a class="contact-link" href="#">
+                        <svg class="contact-link__icon facebook">
+                            <use xlink:href="./img/sprite.svg#facebook-icon"></use>
+                        </svg>
+                        <span class="visually-hidden">facebook link</span>
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact-link" href="#">
+                        <svg class="contact-link__icon twitter">
+                            <use xlink:href="./img/sprite.svg#twitter-icon"></use>
+                        </svg>
+                        <span class="visually-hidden">twitter link</span>
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact-link" href="#">
+                        <svg class="contact-link__icon instagram">
+                            <use xlink:href="./img/sprite.svg#instagram-icon"></use>
+                        </svg>
+                        <span class="visually-hidden">instagram link</span>
+                    </a>
+                </li>
+            </ul>
             <button class="header__menu-button">
                 <span class="menu-button__item"></span>
                 <span class="menu-button__item"></span>
@@ -119,8 +129,9 @@
             </div>
         </section>
         <section class="projects" id="projects">
+            <h2 class="visually-hidden">building projects</h2>
             <div class="container">
-                <h2 class="projects__title">what we do</h2>
+                <span class="projects__title">what we do</span>
                 <ul class="projects__list">
                     <li class="projects__item">
                         <img class="project-img" src="./img/project-first.png" alt="trade-center-build">
@@ -162,8 +173,9 @@
             <div class="projects-decore-two"></div>
         </section>
         <section class="news" id="news">
+            <h2 class="visually-hidden">building news</h2>
             <div class="container">
-                <h2 class="news-title">latest news</h2>
+                <span class="news-title">latest news</span>
                 <div class="news-slider">
                     <div class="news-slider__item">
                         <img class="item-img" src="./img/news-first-build.png" alt="build-one">
@@ -265,39 +277,40 @@
             </div>
         </section>
         <section class="gallery" id="gallery">
+            <h2 class="visually-hidden">building portfolio</h2>
             <div class="container">
-                <h2 class="gallery__title">gallery</h2>
+                <span class="gallery__title">gallery</span>
                 <div class="gallery__list">
-                    <div class="gallery__item">
+                    <a class="gallery__item popup" href="./img/fivth-build.jpg">
                         <img src="./img/fivth-build.jpg" alt="gallery-build1">
                         <svg class="icon">
                             <use xlink:href="./img/sprite.svg#gallery-img-icon"></use>
                         </svg>
-                    </div>
-                    <div class="gallery__item">
+                    </a>
+                    <a class="gallery__item popup" href="./img/third-build.jpg">
                         <img src="./img/third-build.jpg" alt="gallery-build2">
                         <svg class="icon">
                             <use xlink:href="./img/sprite.svg#gallery-img-icon"></use>
                         </svg>
-                    </div>
-                    <div class="gallery__item">
+                    </a>
+                    <a class="gallery__item popup" href="./img/second-bild.jpg">
                         <img src="./img/second-bild.jpg" alt="gallery-build3">
                         <svg class="icon">
                             <use xlink:href="./img/sprite.svg#gallery-img-icon"></use>
                         </svg>
-                    </div>
-                    <div class="gallery__item">
+                    </a>
+                    <a class="gallery__item popup" href="./img/fourth-build.jpg">
                         <img src="./img/fourth-build.jpg" alt="gallery-build4">
                         <svg class="icon">
                             <use xlink:href="./img/sprite.svg#gallery-img-icon"></use>
                         </svg>
-                    </div>
-                    <div class="gallery__item">
+                    </a>
+                    <a class="gallery__item popup" href="./img/first-build.jpg">
                         <img src="./img/first-build.jpg" alt="gallery-build5">
                         <svg class="icon">
                             <use xlink:href="./img/sprite.svg#gallery-img-icon"></use>
                         </svg>
-                    </div>
+                    </a>
                 </div>
                 <a class="gallery__link" href="#">see more</a>
             </div>
@@ -348,32 +361,41 @@
                 <img src="./img/Logo.svg" alt="company-logo">
                 <span>Copyrights © 2020 Montichello</span>
             </div>
-            <div class="footer__contacts">
-                <a class="contact-link" href="#">
-                    <svg class="contact-link__icon facebook">
-                        <use xlink:href="./img/sprite.svg#facebook-icon"></use>
-                    </svg>
-                    <span class="visually-hidden">facebook link</span>
-                </a>
-                <a class="contact-link" href="#">
-                    <svg class="contact-link__icon twitter">
-                        <use xlink:href="./img/sprite.svg#twitter-icon"></use>
-                    </svg>
-                    <span class="visually-hidden">twitter link</span>
-                </a>
-                <a class="contact-link" href="#">
-                    <svg class="contact-link__icon instagram">
-                        <use xlink:href="./img/sprite.svg#instagram-icon"></use>
-                    </svg>
-                    <span class="visually-hidden">instagram link</span>
-                </a>
-            </div>
+            <ul class="footer__contacts">
+                <li class="contact__item">
+                    <a class="contact-link" href="#">
+                        <svg class="contact-link__icon facebook">
+                            <use xlink:href="./img/sprite.svg#facebook-icon"></use>
+                        </svg>
+                        <span class="visually-hidden">facebook link</span>
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact-link" href="#">
+                        <svg class="contact-link__icon twitter">
+                            <use xlink:href="./img/sprite.svg#twitter-icon"></use>
+                        </svg>
+                        <span class="visually-hidden">twitter link</span>
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact-link" href="#">
+                        <svg class="contact-link__icon instagram">
+                            <use xlink:href="./img/sprite.svg#instagram-icon"></use>
+                        </svg>
+                        <span class="visually-hidden">instagram link</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" 
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?&callback=initMap"></script>
     <script src="https://kit.fontawesome.com/15c593ad0c.js" crossorigin="anonymous"></script>
