@@ -868,7 +868,7 @@ img.mfp-img {
   font-size: 30px;
 }
 .contact__form {
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: -200px;
   display: flex;
@@ -1174,6 +1174,9 @@ img.mfp-img {
   .gallery__item:nth-child(1) .icon {
     width: 70px;
     height: 70px;
+  }
+  .contact__form {
+    position: absolute;
   }
   .contact__place {
     height: 700px;

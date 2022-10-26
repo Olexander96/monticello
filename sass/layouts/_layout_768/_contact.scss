@@ -1,5 +1,7 @@
 .contact {
-    
+    &__form {
+        position: absolute;
+    }
     &__place {
         height: 700px;
     }
