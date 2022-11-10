@@ -1,42 +1,24 @@
-Проєкт 2. Архітектура — базовий вебсайт + JS
+## :pushpin: Monticello
+#### :memo: Description: 
 
-Макет за посиланням: https://www.figma.com/file/wqlFV9VWa3oxnvvexwAy4V/Exam%232?node-id=1%3A2;
+Portfolio page of an architectural company (Beetrot Academy - second poject).
+___
 
-Вимоги - Технічне завдання:
-    1) Додати :hover, :focus ефекти для інтерактивних елементів
-    2) Виконати плавний скрол до обраної секції, коли натискаєш на пункт меню
-    3) Плавний скрол до PROJECTS, коли клікаєш іконку стрілки у першій секції
-    4) HEADER і NEWS слайдери
-        1) HEADER - заголовок і підзаголовок нижче — це один слайд
-        2) NEWS - показуються три слайди за раз. Для показу наступного слайду, має прокручуватись лише один 
-            слайд. Автоматичний скрол із затримкою 4 секунди.
-    5) Робоча карта із кастомним маркером. Карту можна створити тут: https://mapstyle.withgoogle.com/
+#### :link: Live Demo: 
+[Monticello](https://olexander96.github.io/monticello/)
 
-Критерії - Кількість балів:
-Верстка - завершені секції (5 балів):
-    1 p - HEADER
-    1 p - PROJECTS
-    1 p - NEWS
-    1 p - GALLERY
-    1 p - CONTACT + FOOTER
+[Design Figma](https://www.figma.com/file/wqlFV9VWa3oxnvvexwAy4V/Exam%232?node-id=0%3A1)
+___
 
-JS (5 балів):
-    1 p - HEADER слайдер
-    1 p - NEWS слайдер
-    1 p - Карта
-    1 p - Плавний скрол від навігації та кнопок до секцій
-    1 p - Валідація форми
+#### :rocket: Technologies Used
 
-Вимоги:
-    1) Назвати проєкт Monticello
-    2) Валідний HTML/CSS
-    3) Семантична верстка
-    4) Звірити з макетом (за допомогою pixel perfect) 
-        1) Шрифти як у макеті
-        2) Під’єднати шрифти через Google Fonts
-    5) Кросбраузерна сумісність у Chrome, Firefox, Opera
-    6) Усі інтерактивні елементи повинні мати стилі :hover, :focus
-    7) Використовувати фавікон
-    8) Застосувати препроцесори
-    9) Керуватися БЕМ (optional)
-    10) Використовувати SVG, де це можливо
+* HTML
+* CSS/SASS
+* JavaScript 
+* jQuery
+* methodology [BEM](https://en.bem.info/)
+___
+
+#### :envelope: Contacts
+* LinkedIn: [@oleksandr-sheiko](https://www.linkedin.com/in/oleksandr-sheiko-74094224a/)
+* Telegram: [@oleksandr-sheiko](https://t.me/oleksandrsheiko96)
